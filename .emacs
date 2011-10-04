@@ -17,6 +17,48 @@
 ;;scroll bar enable
 (tool-bar-mode nil)
 ;;tool bar off
+;;set default directory
+(setq default-directory "~/works/")
+;;visible bell enable
+(setq visible-bell t)
+;;close the startup screen
+(setq inhibit-startup-message t)
+;;change yes to y
+(fset 'yes-or-no-p 'y-or-n-p)
+;;sth about highlight
+(setq font-lock-maximum-decoration t)
+(setq font-lock-global-modes '(not shell-mode text-mode))
+(setq font-lock-verbose t)
+(setq font-lock-maximum-size '((t . 1048576) (vm-mode . 5250000)))
+;;disable the left click paste
+(setq mouse-yank-at-point t)
+;;line number
+(setq column-number-mode t)
+(setq line-number-mode t)
+;;set kill ring
+(setq kill-ring-max 200)
+;;auto fill;;;I don't know
+(setq-default auto-fill-function 'do-auto-fill)
+;;Autofill in all modes;;
+(setq default-fill-column 120)
+;;ban tab
+(setq-default indent-tabs-mode nil)
+(setq default-tab-width 2)
+(setq tab-stop-list ())
+;; as it says
+(setq enable-recursive-minibuffers t)
+;;as it says
+(setq scroll-margin 3 scroll-conservatively 10000)
+;;default mode---text+auto fill
+(setq default-major-mode 'text-mode)
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
+;;about paren...hiahia
+(setq show-paren-mode t) 
+(setq show-paren-style 'parenthesis)
+;;mouse go away...e
+(setq mouse-avoidance-mode 'animate)
+;;as it says
+(setq auto-save-mode nil)
 ;;======set end======================
 
 ;;====time set start=======
